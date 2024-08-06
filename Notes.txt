@@ -9,3 +9,22 @@ MVVM
 - Model: The data displayed in the User Interface
 - View: HTML or "What the user sees"
 - View Model: Code that glues it all together (event handling, binding, business logic, etc...)
+
+4 Things that Knockout gives you:
+ko.observable - like a piece of state 
+              - Knockout under the hood will track changes
+              - If an observable changes, Knockout knows to change the DOM
+              - Early precursor to React paradigm, matching props and state
+
+ko.applyBindings - How Knockout is initalized on the page
+                 - Typically only called once unless components are entering and leaving the page
+
+data-bind - An attribute located somewhere in the DOM
+          - How we get info from the DOM into our JavaScript & vice versa
+          - Surround the stateful part with a span tag to add the data-bind attribute to
+
+ko.computed - takes a function that utilizes other observales to make a result
+            - returns a result based off of another observable
+
+
+How to update observables -> call variable as a fn. (like line 5 in ex2 index.js)
