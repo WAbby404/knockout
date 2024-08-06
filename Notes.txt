@@ -1,0 +1,11 @@
+Knockout.js
+- Open source JS library
+- MIT license
+- Compact
+- Works on most browsers
+- uses Model-View-View Model (MVVM) pattern
+
+MVVM
+- Model: The data displayed in the User Interface
+- View: HTML or "What the user sees"
+- View Model: Code that glues it all together (event handling, binding, business logic, etc...)
